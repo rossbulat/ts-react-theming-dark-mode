@@ -1,9 +1,9 @@
 import React from "react";
-import { ThemeContextState } from '../types';
+import { ThemeContext } from '../types';
 
 const defaultMode = 'dark';
 
-export const ManageThemeContext: React.Context<ThemeContextState> = React.createContext({
+export const ManageThemeContext: React.Context<ThemeContext> = React.createContext({
   mode: defaultMode,
   toggle: () => { }
 });
